@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#CFB78F</item>
+        <item name="colorPrimaryDark">#CFB78F</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Theme.NoPreviewWindow" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowDisablePreview">true</item>
+        <item name="colorPrimary">#CFB78F</item>
+        <item name="colorPrimaryDark">#CFB78F</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

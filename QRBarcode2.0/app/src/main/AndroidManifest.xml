@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.test.qrbarcodeplus">
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SocialActivity"
+            android:theme="@style/Theme.NoPreviewWindow"/>
+        <activity
+            android:name=".NutritionActivity"
+            android:theme="@style/Theme.NoPreviewWindow" />
+        <activity
+            android:name=".SettingsActivity"
+            android:theme="@style/Theme.NoPreviewWindow" />
+        <activity
+            android:name=".ListsActivity"
+            android:theme="@style/Theme.NoPreviewWindow" />
+        <activity
+            android:name=".qrActivity"
+            android:theme="@style/Theme.NoPreviewWindow" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/Theme.NoPreviewWindow" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:theme="@style/Theme.NoPreviewWindow" />
+        <activity
+            android:name=".SignUpActivity"
+            android:theme="@style/Theme.NoPreviewWindow" />
+        <activity
+            android:name=".SignInActivity"
+            android:theme="@style/Theme.NoPreviewWindow"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="barcode" />
+    </application>
+
+</manifest>
